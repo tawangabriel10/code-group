@@ -1,0 +1,10 @@
+server:
+  servlet:
+    context-path: /api
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    enabled: true
+  api-docs:
+    enabled: true
