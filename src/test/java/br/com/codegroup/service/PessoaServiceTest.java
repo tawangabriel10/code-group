@@ -4,7 +4,6 @@ import br.com.codegroup.domain.dto.PessoaDTO;
 import br.com.codegroup.domain.entity.Pessoa;
 import br.com.codegroup.domain.exceptions.PersonNotFoundException;
 import br.com.codegroup.repository.PessoaRepository;
-import br.com.codegroup.sevice.PessoaService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

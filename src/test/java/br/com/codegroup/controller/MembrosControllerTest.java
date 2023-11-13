@@ -1,7 +1,7 @@
 package br.com.codegroup.controller;
 
 import br.com.codegroup.domain.dto.VincularMembroDTO;
-import br.com.codegroup.sevice.MembrosService;
+import br.com.codegroup.service.MembrosService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

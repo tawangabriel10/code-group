@@ -2,7 +2,7 @@ package br.com.codegroup.controller;
 
 import br.com.codegroup.domain.dto.AlterarStatusDTO;
 import br.com.codegroup.domain.dto.ProjetoDTO;
-import br.com.codegroup.sevice.ProjetoService;
+import br.com.codegroup.service.ProjetoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

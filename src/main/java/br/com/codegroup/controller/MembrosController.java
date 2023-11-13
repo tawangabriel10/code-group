@@ -1,7 +1,7 @@
 package br.com.codegroup.controller;
 
 import br.com.codegroup.domain.dto.VincularMembroDTO;
-import br.com.codegroup.sevice.MembrosService;
+import br.com.codegroup.service.MembrosService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

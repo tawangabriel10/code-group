@@ -3,7 +3,7 @@ package br.com.codegroup.controller;
 import br.com.codegroup.domain.dto.AlterarStatusDTO;
 import br.com.codegroup.domain.dto.ProjetoDTO;
 import br.com.codegroup.domain.enumeration.ProjetoStatusEnum;
-import br.com.codegroup.sevice.ProjetoService;
+import br.com.codegroup.service.ProjetoService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

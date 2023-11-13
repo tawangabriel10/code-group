@@ -8,8 +8,6 @@ import br.com.codegroup.domain.enumeration.ProjetoStatusEnum;
 import br.com.codegroup.domain.exceptions.ProjectLockedException;
 import br.com.codegroup.domain.exceptions.ProjectNotFoundException;
 import br.com.codegroup.repository.ProjetoRepository;
-import br.com.codegroup.sevice.PessoaService;
-import br.com.codegroup.sevice.ProjetoService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

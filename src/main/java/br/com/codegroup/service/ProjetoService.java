@@ -1,4 +1,4 @@
-package br.com.codegroup.sevice;
+package br.com.codegroup.service;
 
 import br.com.codegroup.domain.dto.AlterarStatusDTO;
 import br.com.codegroup.domain.dto.PessoaDTO;

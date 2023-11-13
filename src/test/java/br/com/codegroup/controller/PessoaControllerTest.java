@@ -1,7 +1,7 @@
 package br.com.codegroup.controller;
 
 import br.com.codegroup.domain.dto.PessoaDTO;
-import br.com.codegroup.sevice.PessoaService;
+import br.com.codegroup.service.PessoaService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

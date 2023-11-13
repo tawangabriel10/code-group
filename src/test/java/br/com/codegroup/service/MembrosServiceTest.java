@@ -8,7 +8,6 @@ import br.com.codegroup.domain.exceptions.PersonNotFoundException;
 import br.com.codegroup.domain.exceptions.ProjectNotFoundException;
 import br.com.codegroup.repository.PessoaRepository;
 import br.com.codegroup.repository.ProjetoRepository;
-import br.com.codegroup.sevice.MembrosService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
