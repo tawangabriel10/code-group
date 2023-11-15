@@ -1,5 +1,6 @@
 package br.com.codegroup.interceptor;
 
+import br.com.codegroup.domain.dto.ArgumentsErrorResponseDTO;
 import br.com.codegroup.domain.dto.BusinessError;
 import br.com.codegroup.domain.exceptions.PersonNotEmployeeException;
 import br.com.codegroup.domain.exceptions.PersonNotFoundException;
@@ -8,6 +9,8 @@ import br.com.codegroup.domain.exceptions.ProjectNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.ObjectError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -36,5 +39,14 @@ public class InterceptorHandler {
     public ResponseEntity<BusinessError> projectLocked(ProjectLockedException e, HttpServletRequest request) {
         BusinessError error = new BusinessError(HttpStatus.BAD_REQUEST.value(), e.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<ArgumentsErrorResponseDTO> methodArgumentNotValid(MethodArgumentNotValidException ex) {
+        ArgumentsErrorResponseDTO argumentsErrorResponseDTO = new ArgumentsErrorResponseDTO();
+        for(ObjectError error : ex.getBindingResult().getAllErrors()) {
+            argumentsErrorResponseDTO.getErrors().add(error.getDefaultMessage());
+        }
+        return new ResponseEntity<>(argumentsErrorResponseDTO, HttpStatus.BAD_REQUEST);
     }
 }

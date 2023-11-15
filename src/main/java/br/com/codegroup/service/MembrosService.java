@@ -11,12 +11,14 @@ import br.com.codegroup.repository.ProjetoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Optional;
 
 @Service
+@Validated
 @RequiredArgsConstructor
 @Transactional
 public class MembrosService {
